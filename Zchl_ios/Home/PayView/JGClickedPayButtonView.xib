@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JGClickedPayButtonView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8x5-x5-fgU">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qbr-T9-L75">
+                            <rect key="frame" x="8" y="233.5" width="359" height="200"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pay_icon_def" translatesAutoresizingMaskIntoConstraints="NO" id="MKS-8X-vNY">
+                                    <rect key="frame" x="142.5" y="8" width="75" height="75"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="75" id="F9m-je-tFw"/>
+                                        <constraint firstAttribute="height" constant="75" id="oA6-3U-wHY"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支付失败" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IS4-HZ-AE4">
+                                    <rect key="frame" x="20" y="93" width="319" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOp-8a-N6Q">
+                                    <rect key="frame" x="8" y="152" width="161.5" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="yat-fm-vDC"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <state key="normal" title="取消" backgroundImage="pay_frame_gra">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVZ-Bq-dbQ">
+                                    <rect key="frame" x="189.5" y="152" width="161.5" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="12v-KJ-9Yr"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <state key="normal" title="重新支付" backgroundImage="pay_frame_ora">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="HVZ-Bq-dbQ" firstAttribute="width" secondItem="bOp-8a-N6Q" secondAttribute="width" id="4wh-nU-zxL"/>
+                                <constraint firstItem="bOp-8a-N6Q" firstAttribute="top" relation="greaterThanOrEqual" secondItem="IS4-HZ-AE4" secondAttribute="bottom" constant="20" id="A3S-eo-EGk"/>
+                                <constraint firstItem="MKS-8X-vNY" firstAttribute="centerX" secondItem="qbr-T9-L75" secondAttribute="centerX" id="FCd-eK-prh"/>
+                                <constraint firstAttribute="trailing" secondItem="HVZ-Bq-dbQ" secondAttribute="trailing" constant="8" id="JT0-Lk-yPg"/>
+                                <constraint firstAttribute="bottom" secondItem="bOp-8a-N6Q" secondAttribute="bottom" constant="8" id="eav-pn-bYx"/>
+                                <constraint firstAttribute="bottom" secondItem="HVZ-Bq-dbQ" secondAttribute="bottom" constant="8" id="i3v-my-jHj"/>
+                                <constraint firstAttribute="trailing" secondItem="IS4-HZ-AE4" secondAttribute="trailing" constant="20" id="iDw-xa-R2X"/>
+                                <constraint firstAttribute="height" constant="200" id="kH8-qn-iLd"/>
+                                <constraint firstItem="MKS-8X-vNY" firstAttribute="top" secondItem="qbr-T9-L75" secondAttribute="top" constant="8" id="l5k-oS-eDE"/>
+                                <constraint firstItem="bOp-8a-N6Q" firstAttribute="leading" secondItem="qbr-T9-L75" secondAttribute="leading" constant="8" id="pdU-9o-IZw"/>
+                                <constraint firstItem="IS4-HZ-AE4" firstAttribute="top" secondItem="MKS-8X-vNY" secondAttribute="bottom" constant="10" id="rgY-N7-qvX"/>
+                                <constraint firstItem="IS4-HZ-AE4" firstAttribute="leading" secondItem="qbr-T9-L75" secondAttribute="leading" constant="20" id="tsM-7u-LPP"/>
+                                <constraint firstItem="HVZ-Bq-dbQ" firstAttribute="leading" secondItem="bOp-8a-N6Q" secondAttribute="trailing" constant="20" id="zzM-5s-3dz"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="qbr-T9-L75" firstAttribute="centerY" secondItem="8x5-x5-fgU" secondAttribute="centerY" id="Rae-rw-Fuq"/>
+                        <constraint firstAttribute="trailing" secondItem="qbr-T9-L75" secondAttribute="trailing" constant="8" id="mbh-S5-ZAA"/>
+                        <constraint firstItem="qbr-T9-L75" firstAttribute="leading" secondItem="8x5-x5-fgU" secondAttribute="leading" constant="8" id="wlz-zD-cDp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8x5-x5-fgU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Dpf-no-SX9"/>
+                <constraint firstItem="8x5-x5-fgU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ObX-8F-awP"/>
+                <constraint firstAttribute="trailing" secondItem="8x5-x5-fgU" secondAttribute="trailing" id="QMa-Aq-UMz"/>
+                <constraint firstAttribute="bottom" secondItem="8x5-x5-fgU" secondAttribute="bottom" id="T3s-wf-iiM"/>
+            </constraints>
+            <connections>
+                <outlet property="MSGLabel" destination="IS4-HZ-AE4" id="rCN-g5-Bwh"/>
+                <outlet property="cancelButton" destination="bOp-8a-N6Q" id="rUM-ma-dQf"/>
+                <outlet property="repayButton" destination="HVZ-Bq-dbQ" id="JG9-8h-MWu"/>
+            </connections>
+            <point key="canvasLocation" x="-191" y="300"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pay_frame_gra" width="150" height="40"/>
+        <image name="pay_frame_ora" width="150" height="40"/>
+        <image name="pay_icon_def" width="75" height="75"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

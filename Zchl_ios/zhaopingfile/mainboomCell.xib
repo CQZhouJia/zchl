@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="KGk-i7-Jjw" customClass="mainboomCell">
+            <rect key="frame" x="0.0" y="0.0" width="342" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="342" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Kb-fO-rDo">
+                        <rect key="frame" x="17" y="8" width="308" height="63"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="装载机司机" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vi1-pR-EeR">
+                                <rect key="frame" x="25" y="8" width="214" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Or1-8n-FF4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="重庆" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yZI-cS-u0C">
+                                <rect key="frame" x="264" y="8" width="27" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="NYY-vk-hhu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="重庆上游黄忠工程及其有限公司" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnH-cv-KDU">
+                                <rect key="frame" x="25" y="37" width="172" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="sQi-zy-xsV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.65876668691635132" green="0.65886121988296509" blue="0.6587369441986084" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="5000-6000元/月" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJb-Zm-YKL">
+                                <rect key="frame" x="205" y="38" width="95" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="gt1-Ju-D4B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.96104449033737183" green="0.67976701259613037" blue="0.39399966597557068" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Vi1-pR-EeR" firstAttribute="leading" secondItem="8Kb-fO-rDo" secondAttribute="leading" constant="25" id="Ffg-aB-deD"/>
+                            <constraint firstItem="qJb-Zm-YKL" firstAttribute="leading" secondItem="rnH-cv-KDU" secondAttribute="trailing" constant="8" id="HVz-R5-T69"/>
+                            <constraint firstItem="rnH-cv-KDU" firstAttribute="leading" secondItem="8Kb-fO-rDo" secondAttribute="leading" constant="25" id="J9a-rn-9Ai"/>
+                            <constraint firstAttribute="bottom" secondItem="qJb-Zm-YKL" secondAttribute="bottom" constant="4" id="K40-Ex-Vfl"/>
+                            <constraint firstItem="yZI-cS-u0C" firstAttribute="leading" secondItem="Vi1-pR-EeR" secondAttribute="trailing" constant="25" id="V5z-RG-BpT"/>
+                            <constraint firstAttribute="bottom" secondItem="rnH-cv-KDU" secondAttribute="bottom" constant="5" id="YZP-N9-wHx"/>
+                            <constraint firstItem="Vi1-pR-EeR" firstAttribute="top" secondItem="8Kb-fO-rDo" secondAttribute="top" constant="8" id="gmJ-mU-aeB"/>
+                            <constraint firstAttribute="trailing" secondItem="yZI-cS-u0C" secondAttribute="trailing" constant="17" id="hep-4Q-XKF"/>
+                            <constraint firstItem="yZI-cS-u0C" firstAttribute="leading" secondItem="Vi1-pR-EeR" secondAttribute="trailing" constant="25" id="qzC-I9-zTH"/>
+                            <constraint firstItem="qJb-Zm-YKL" firstAttribute="leading" secondItem="rnH-cv-KDU" secondAttribute="trailing" constant="8" id="rpf-oE-khH"/>
+                            <constraint firstAttribute="trailing" secondItem="qJb-Zm-YKL" secondAttribute="trailing" constant="8" id="y4A-MM-RY5"/>
+                            <constraint firstItem="yZI-cS-u0C" firstAttribute="top" secondItem="8Kb-fO-rDo" secondAttribute="top" constant="8" id="zfG-wE-PQx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8Kb-fO-rDo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="17" id="9x0-y4-eMT"/>
+                    <constraint firstItem="8Kb-fO-rDo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Civ-7N-ubm"/>
+                    <constraint firstAttribute="bottom" secondItem="8Kb-fO-rDo" secondAttribute="bottom" constant="8" id="Nhh-hQ-j5N"/>
+                    <constraint firstAttribute="trailing" secondItem="8Kb-fO-rDo" secondAttribute="trailing" constant="17" id="aEa-Fd-VaK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backView" destination="8Kb-fO-rDo" id="kII-G5-gkx"/>
+                <outlet property="citylabel" destination="yZI-cS-u0C" id="UIH-y1-RNR"/>
+                <outlet property="comlabel" destination="rnH-cv-KDU" id="jde-7e-Zct"/>
+                <outlet property="namelabel" destination="Vi1-pR-EeR" id="2Yy-jI-HhB"/>
+                <outlet property="pricelabel" destination="qJb-Zm-YKL" id="4jY-Br-BSP"/>
+            </connections>
+            <point key="canvasLocation" x="-259" y="101"/>
+        </tableViewCell>
+    </objects>
+</document>

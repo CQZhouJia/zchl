@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LSHomeCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="80"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vML-9j-pPu" userLabel="Viewl">
+                        <rect key="frame" x="0.0" y="0.0" width="25" height="60"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="wt4-Fg-pGC"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BAC-wX-H5Y">
+                        <rect key="frame" x="25" y="5" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="SbJ-US-hHU"/>
+                            <constraint firstAttribute="height" constant="50" id="sO1-au-5xn"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="轰动中兴" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qjt-L6-KGB">
+                        <rect key="frame" x="4" y="58" width="92" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="ay1-aM-VQw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XnC-Ct-Ymt" userLabel="Viewr">
+                        <rect key="frame" x="75" y="0.0" width="25" height="60"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="F71-9G-C9k"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Qjt-L6-KGB" firstAttribute="top" secondItem="BAC-wX-H5Y" secondAttribute="bottom" constant="3" id="0Nq-Ve-KzT"/>
+                <constraint firstItem="vML-9j-pPu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="83C-zU-gON"/>
+                <constraint firstItem="Qjt-L6-KGB" firstAttribute="top" secondItem="BAC-wX-H5Y" secondAttribute="bottom" constant="3" id="EAF-VW-6cb"/>
+                <constraint firstItem="XnC-Ct-Ymt" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="IAr-BB-iFW"/>
+                <constraint firstAttribute="trailing" secondItem="Qjt-L6-KGB" secondAttribute="trailing" constant="4" id="OAb-wF-dDh"/>
+                <constraint firstItem="Qjt-L6-KGB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="PQU-GZ-4JH"/>
+                <constraint firstItem="BAC-wX-H5Y" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="WnZ-fK-3KO"/>
+                <constraint firstAttribute="trailing" secondItem="XnC-Ct-Ymt" secondAttribute="trailing" id="ffU-NN-Ae6"/>
+                <constraint firstItem="vML-9j-pPu" firstAttribute="width" secondItem="XnC-Ct-Ymt" secondAttribute="width" id="fvk-oc-OTq"/>
+                <constraint firstItem="BAC-wX-H5Y" firstAttribute="leading" secondItem="vML-9j-pPu" secondAttribute="trailing" id="gHb-WG-g3z"/>
+                <constraint firstItem="vML-9j-pPu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="suc-mO-pAz"/>
+                <constraint firstItem="XnC-Ct-Ymt" firstAttribute="leading" secondItem="BAC-wX-H5Y" secondAttribute="trailing" id="t0F-1L-Vnb"/>
+            </constraints>
+            <size key="customSize" width="100" height="80"/>
+            <connections>
+                <outlet property="LogoImage" destination="BAC-wX-H5Y" id="fex-Dq-JWx"/>
+                <outlet property="nameLabel" destination="Qjt-L6-KGB" id="K9h-tJ-210"/>
+            </connections>
+            <point key="canvasLocation" x="58" y="102"/>
+        </collectionViewCell>
+    </objects>
+</document>

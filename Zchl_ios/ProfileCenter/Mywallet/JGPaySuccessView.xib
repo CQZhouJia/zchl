@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JGPaySuccessView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dz0-Ja-hJb">
+                    <rect key="frame" x="10" y="233.5" width="355" height="200"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支付成功" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0l-ur-4rg">
+                            <rect key="frame" x="20" y="93" width="315" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pay_icon_suc" translatesAutoresizingMaskIntoConstraints="NO" id="4F0-JG-M6F">
+                            <rect key="frame" x="140.5" y="8" width="75" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="3T2-Ao-kMb"/>
+                                <constraint firstAttribute="width" constant="75" id="pYi-5u-RQa"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cs4-jr-gzw">
+                            <rect key="frame" x="102.5" y="140" width="150" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="fwQ-8i-i9g"/>
+                                <constraint firstAttribute="width" constant="150" id="iys-Uk-kc0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="确定" backgroundImage="pay_frame_gre">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="4F0-JG-M6F" firstAttribute="centerX" secondItem="dz0-Ja-hJb" secondAttribute="centerX" id="2Qr-WT-r59"/>
+                        <constraint firstAttribute="trailing" secondItem="V0l-ur-4rg" secondAttribute="trailing" constant="20" id="4bO-x9-npf"/>
+                        <constraint firstItem="V0l-ur-4rg" firstAttribute="top" secondItem="4F0-JG-M6F" secondAttribute="bottom" constant="10" id="8pm-9D-3BW"/>
+                        <constraint firstItem="V0l-ur-4rg" firstAttribute="leading" secondItem="dz0-Ja-hJb" secondAttribute="leading" constant="20" id="D4u-fV-sDn"/>
+                        <constraint firstItem="4F0-JG-M6F" firstAttribute="top" secondItem="dz0-Ja-hJb" secondAttribute="top" constant="8" id="DKi-ad-eoZ"/>
+                        <constraint firstAttribute="bottom" secondItem="cs4-jr-gzw" secondAttribute="bottom" constant="20" id="JUT-Io-dWH"/>
+                        <constraint firstAttribute="height" constant="200" id="aR3-4s-2dI"/>
+                        <constraint firstItem="cs4-jr-gzw" firstAttribute="top" relation="greaterThanOrEqual" secondItem="V0l-ur-4rg" secondAttribute="bottom" constant="20" id="ifO-z3-5Fz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dz0-Ja-hJb" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="9HE-10-a3e"/>
+                <constraint firstAttribute="trailing" secondItem="dz0-Ja-hJb" secondAttribute="trailing" constant="10" id="PEq-NH-Yok"/>
+                <constraint firstItem="dz0-Ja-hJb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="mG3-sl-MCD"/>
+                <constraint firstItem="cs4-jr-gzw" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="pC6-mC-lEc"/>
+            </constraints>
+            <connections>
+                <outlet property="confirmButton" destination="cs4-jr-gzw" id="ZHD-qZ-INK"/>
+                <outlet property="successLB" destination="V0l-ur-4rg" id="rAV-m0-3Ky"/>
+            </connections>
+            <point key="canvasLocation" x="-136" y="301"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pay_frame_gre" width="150" height="40"/>
+        <image name="pay_icon_suc" width="75" height="75"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>
